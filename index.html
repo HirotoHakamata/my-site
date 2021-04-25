@@ -13,6 +13,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" 
+      style="display:none;" onload="if(submitted) 
+      {window.location='thanks.html'}">
+    </iframe>
   </head>
   <body>
     <wrapper class="bg-light">
@@ -242,17 +247,17 @@
         <div id="contact" class="container mt-5 pb-5">
             <h1 class="text-center">お問い合わせ</h1>
 
-            <from method="post" action="mail.php">
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScNyS3BLEj3RltSflVae-6zJF9c-OP-8CDZ1pkhFjY5EAf_-A/formResponse" target="hidden_iframe" onsubmit="submitted=true" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve" data-response="%.@.[]]" data-first-entry="0" data-last-entry="3" data-is-first-page="true">
 
                 <div class="from-group mt-4">
                     <div class="row">
 
                         <div class="col-md-4">
-                            <p class="text-center">メールアドレス</p>
+                            <p class="text-center">お名前</p>
                         </div>
 
                         <div class="col-md-8">
-                            <input type="email" name="email" class="form-control" placeholder="必須">
+                            <input type="text" name="entry.1558022753" required="required" id="textfiled" class="form-control" placeholder="必須">
                         </div>
 
                     </div>
@@ -262,11 +267,11 @@
                     <div class="row">
 
                         <div class="col-md-4">
-                            <p class="text-center">お名前</p>
+                            <p class="text-center">メールアドレス</p>
                         </div>
                         
                         <div class="col-md-8">
-                            <input type="text" name="name" class="form-control" placeholder="必須">
+                            <input type="text" name="entry.434402567" required="required" class="form-control" placeholder="必須">
                         </div>
 
                     </div>
@@ -275,11 +280,11 @@
                 <div class="form-group mt-4">
                     <div class="row">
                         <div class="col-md-4">
-                            <p class="text-center">お問い合わせ内容</p>
+                            <p class="text-center">質問内容</p>
                         </div>
 
                         <div class="col-md-8">
-                            <textarea rows="4" cols="50" placeholder="必須" name="text" type="text" class="form-control"></textarea>
+                            <textarea rows="4" cols="50" placeholder="必須" name="entry.1445569289" required="required" type="text" class="form-control"></textarea>
                         </div>
                     </div>
                 </div>
