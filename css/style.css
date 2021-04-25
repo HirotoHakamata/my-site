@@ -22,3 +22,14 @@ h1, h2, h3, h4, h5, h6 {
 .btn-large {
     border-radius: 3px;
 }
+
+.card-link{
+    transition-duration: 0.3s;
+
+}
+
+.card-link:hover{
+    opacity: 0.6;
+    transition-duration: 0.3s;
+
+}
